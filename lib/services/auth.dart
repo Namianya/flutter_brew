@@ -5,6 +5,7 @@ class AuthService {
 
 //  singn in annonimusly
   Future signInAnon() async {
+
     try {
       UserCredential userCredential = await _auth.signInAnonymously();
       User user = userCredential.user;
